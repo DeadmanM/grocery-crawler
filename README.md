@@ -8,4 +8,5 @@ Dependencies :
 	- ElasticSearch 5.5.1 
 
 Optional :
+
 	- Kibana 5.5.1 (To visualize Elastic indexes)
