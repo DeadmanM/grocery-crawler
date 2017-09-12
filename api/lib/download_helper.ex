@@ -1,5 +1,10 @@
 defmodule Api.DownloadHelper do
 	require Logger
+
+	# Inspired by https://github.com/sergiotapia/magnetissimo
+	@headers [{"Accept", "text/html,application/xhtml+xml"}]
+  	@options [follow_redirect: false, ssl: [versions: [:"tlsv1.2"]]]
+
 	@doc """
 		This helper returns the HTML body associated with its argument.
 		It does not directly download the page. Instead, it first checks the MIME type

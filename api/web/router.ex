@@ -8,6 +8,7 @@ defmodule Api.Router do
   scope "/", Api do
      pipe_through :api
 
-     get "crawl/:groceryId", CrawlController, :index
+     get "crawl/:groceryId", CrawlController, :main
+
   end
 end

@@ -21,7 +21,7 @@ defmodule Api.Mixfile do
     [
       #applications: [:elistix],
       mod: {Api, []},
-      extra_applications: [:logger, :elistix]
+      extra_applications: [:logger]
     ]
   end
 
@@ -44,7 +44,7 @@ defmodule Api.Mixfile do
       {:cowboy, "~> 1.0"},
       {:floki, "~> 0.18.0"},
       {:html5ever, "~> 0.5.0"},
-      {:elistix, "~> 1.0.1"}
+      {:elastix, ">= 0.0.0"}
     ]
   end
 
